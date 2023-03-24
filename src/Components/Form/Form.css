@@ -1,0 +1,25 @@
+form {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .8em;
+  gap: .1rem;
+}
+
+input {
+  padding: .8em;
+  border: .1em black solid;
+}
+
+input[type='submit'] {
+  background-color: rgb(54, 54, 54); ;
+  color: rgb(196, 196, 196);
+}
+
