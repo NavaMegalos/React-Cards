@@ -1,19 +1,27 @@
 import { useState } from 'react'
 import './App.css'
+import Card from './Components/Card/Card'
 import Form from './Components/Form/Form'
+
+const users = []
 
 const handleOnSubmit = (username, setUsername) => {
   setUsername(username)
 }
 
-export default function App (props) {
+const getUsers = (newUser) => {
+  users.push(newUser)
+}
+
+export default function App ({ title }) {
   const [username, setUsername] = useState()
+  if (username) getUsers(username)
 
   return (
     <>
-      <h1>{props.title}</h1>
+      <h1>{title}</h1>
       <Form handleOnSubmit={handleOnSubmit} setUsername={setUsername} />
-      {username && <p>The user name is {username} </p>}
+      {users && users.map((user, key) => <Card username={user} key={key} />)}
     </>
   )
 }

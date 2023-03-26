@@ -1,0 +1,20 @@
+.card-user {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.content {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  margin: .35rem;
+  height: 200px;
+  width: 380px;
+  background-color: rgba(9, 10, 10, .1);
+  border-radius: .5em;
+}
+
+.content h2, .content h3 {
+  display: block;
+}

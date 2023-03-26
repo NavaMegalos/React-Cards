@@ -4,6 +4,6 @@ import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <main>
-    <App title='Github Cards' />
+    <App title='Github Cards App' />
   </main>
 )
